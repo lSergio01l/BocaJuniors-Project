@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto Boca juniors: Trivia">
+  <title>Trivia | Boca Jrs</title>
+  <!-- Favicon: ícono de la pestaña del navegador -->
+  <link rel="icon" href="./img/futbol-americano.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======================= ENCABEZADO ======================= -->
+  <header>
+    <div class="LogoBoca">
+      <img src="./img/boca-juniors.71c098ad.png" alt="Logo de Boca Juniors" width="125" height="125">
+    </div>
+    <div class="TextoNav">
+       <p><span>Boca Juniors</span> - Pasión Xeneize</p>
+    </div>
+
+    <!-- MENÚ: es el MISMO en todas las páginas del sitio.          -->
+    <!-- Los enlaces usan rutas RELATIVAS: los archivos están en    -->
+    <!-- la misma carpeta, así que basta con escribir su nombre.    -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="idolos.html">ídolos y títulos</a></li>
+        <li><a href="multimedia.html">Galería multimedia</a></li>
+        <li><a href="trivia.html"><u>Trivia</u></a></li>
+        <li><a href="Inscripcion.html">Suscríbete</a></li>
+        <li><a href="Contactanos.html">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+   <hr>
+<div class="card">
+       <main>
+       <!-- Un solo h1 por página: el título principal -->
+       <h1>Demuestra tu conocimiento Xeneize</h1>
+       <!-- ===== Sección de bienvenida ===== -->
+       </main>
+</div>
+
+<div class="card">
+<section>
+    <p>
+        Responde las siguientes preguntas y demuestra cuánto
+        conoces sobre la historia del club.
+    </p>
+
+    <form id="formTrivia" method="post">
+
+        <fieldset>
+            <legend>1. Datos del participante</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Escribe tu nombre">
+
+            <br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@correo.com">
+
+            <br><br>
+
+            <label for="fecha">Fecha de participación:</label>
+            <input type="date" id="fecha" name="fecha">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>2. Preguntas de conocimientos</legend>
+
+            <p>1. ¿En qué año fue fundado Boca Juniors?</p>
+
+            <input type="radio" id="anio1905" name="fundacion"
+                   value="1905">
+            <label for="anio1905">1905</label>
+
+            <br>
+
+            <input type="radio" id="anio1910" name="fundacion"
+                   value="1910">
+            <label for="anio1910">1910</label>
+
+            <br>
+
+            <input type="radio" id="anio1920" name="fundacion"
+                   value="1920">
+            <label for="anio1920">1920</label>
+
+            <br><br>
+
+            <p>2. ¿Cómo se llama el estadio de Boca Juniors?</p>
+
+            <label for="estadio">Selecciona una respuesta:</label>
+
+            <select id="estadio" name="estadio">
+                <option value="">-- Selecciona --</option>
+                <option value="monumental">Estadio Monumental</option>
+                <option value="bombonera">La Bombonera</option>
+                <option value="cilindro">El Cilindro</option>
+                <option value="libertadores">Estadio Libertadores de América</option>
+            </select>
+
+            <br><br>
+
+            <p>3. ¿Cuáles son los colores tradicionales de Boca Juniors?</p>
+
+            <input type="radio" id="azulamarillo" name="colores"
+                   value="azul_amarillo">
+            <label for="azulamarillo">Azul y amarillo</label>
+
+            <br>
+
+            <input type="radio" id="rojiblanco" name="colores"
+                   value="rojo_blanco">
+            <label for="rojiblanco">Rojo y blanco</label>
+
+            <br>
+
+            <input type="radio" id="verdeblanco" name="colores"
+                   value="verde_blanco">
+            <label for="verdeblanco">Verde y blanco</label>
+
+            <br><br>
+
+            <p>4. ¿Cuáles de estas competiciones ha ganado Boca Juniors?</p>
+            <p>Selecciona todas las respuestas que consideres correctas.</p>
+
+            <input type="checkbox" id="libertadores" name="titulos[]"
+                   value="libertadores">
+            <label for="libertadores">Copa Libertadores</label>
+
+            <br>
+
+            <input type="checkbox" id="sudamericana" name="titulos[]"
+                   value="sudamericana">
+            <label for="sudamericana">Copa Sudamericana</label>
+
+            <br>
+
+            <input type="checkbox" id="intercontinental" name="titulos[]"
+                   value="intercontinental">
+            <label for="intercontinental">Copa Intercontinental</label>
+
+            <br>
+
+            <input type="checkbox" id="europa" name="titulos[]"
+                   value="champions">
+            <label for="europa">UEFA Champions League</label>
+
+            <br><br>
+
+            <p>5. ¿Cuál de estos jugadores es un ídolo histórico de Boca Juniors?</p>
+
+            <label for="idolo">Elige un jugador:</label>
+
+            <select id="idolo" name="idolo">
+                <option value="">-- Selecciona --</option>
+                <option value="riquelme">Juan Román Riquelme</option>
+                <option value="messi">Lionel Messi</option>
+                <option value="ronaldo">Cristiano Ronaldo</option>
+                <option value="neymar">Neymar Jr.</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>3. Opiniones y preferencias</legend>
+
+            <p>6. ¿Quién es tu ídolo favorito de Boca Juniors?</p>
+
+            <label for="favorito">Escribe el nombre del jugador:</label>
+            <input type="text" id="favorito" name="favorito"
+                   placeholder="Ej. Martín Palermo">
+
+            <br><br>
+
+            <p>7. ¿Qué tanto te gustó esta trivia?</p>
+
+            <label for="valoracion">Califica tu experiencia del 1 al 10:</label>
+            <br>
+            <input type="range" id="valoracion" name="valoracion"
+                   min="1" max="10" value="5">
+
+            <br><br>
+
+            <p>8. ¿Qué tema sobre Boca Juniors te gustaría conocer más?</p>
+
+            <textarea id="comentarios" name="comentarios"
+                      rows="4" cols="40"
+                      placeholder="Escribe tu respuesta aquí..."></textarea>
+        </fieldset>
+
+        <br>
+        <div class="botonesForm">
+              <input type="submit" value="Enviar respuestas">
+              <input type="reset" value="Limpiar formulario">
+        </div>
+
+    </form>
+</section>
+</div>
+
+
+  <!-- ======================= PIE DE PÁGINA ======================= -->
+   <div class="card">
+       <button onclick="window.location.href='index.html'">← Volver a la página principal</button>
+   </div>
+   <hr>
+  <footer>
+    <p><small>&copy; 2026 Pasión Xeneize por Sergio Salcedo. Proyecto académico - UNIAJC.</small></p>
+  </footer>
+  <script src="./js/validacionesTrivia.js"></script>
+  <script src="./js/InicioTop.js"></script>
+</body>
+</html>

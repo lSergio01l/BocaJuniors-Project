@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+  ================================================================
+  PROYECTO : Patitas Felices - Sitio web de varias páginas
+  CURSO    : Fundamentos Web - UNIAJC
+  PÁGINA   : index.html (página principal)
+  TEMAS    : estructura HTML5 semántica, enlaces entre páginas,
+             imágenes, listas, tablas, video local y enlaces a YouTube.
+  NOTA     : solo HTML. Sin CSS ni JavaScript por ahora.
+  ================================================================
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto Boca juniors: Contactanos">
+  <title>Contactanos | Boca Jrs</title>
+  <!-- Favicon: ícono de la pestaña del navegador -->
+  <link rel="icon" href="./img/futbol-americano.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======================= ENCABEZADO ======================= -->
+  <header>
+    <div class="LogoBoca">
+      <img src="./img/boca-juniors.71c098ad.png" alt="Logo de Boca Juniors" width="125" height="125">
+    </div>
+    <div class="TextoNav">
+       <p><span>Boca Juniors</span> - Pasión Xeneize</p>
+    </div>
+
+    <!-- MENÚ: es el MISMO en todas las páginas del sitio.          -->
+    <!-- Los enlaces usan rutas RELATIVAS: los archivos están en    -->
+    <!-- la misma carpeta, así que basta con escribir su nombre.    -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="idolos.html">ídolos y títulos</a></li>
+        <li><a href="multimedia.html">Galería multimedia</a></li>
+        <li><a href="trivia.html">Trivia</a></li>
+        <li><a href="Inscripcion.html">Suscríbete</a></li>
+        <li><a href="Contactanos.html"><u>Contactanos</u></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <hr>
+  <div class="card">
+    <main>
+      <!-- Un solo h1 por página: el título principal -->
+      <h1>Contáctanos</h1>
+
+      <!-- ===== Sección de bienvenida ===== -->
+    </main>
+  </div>
+<section>
+
+<div class="card">
+<form id="formContactanos" method="post">
+
+    <fieldset>
+        <legend>1. Información de contacto</legend>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"
+               placeholder="Escribe tu nombre">
+
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"
+               placeholder="ejemplo@correo.com">
+
+        <br><br>
+
+        <label for="telefono">Teléfono (opcional):</label>
+        <input type="tel" id="telefono" name="telefono"
+               placeholder="Tu número de contacto">
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>2. Motivo del contacto</legend>
+
+        <label for="motivo">¿Por qué nos contactas?</label>
+
+        <select id="motivo" name="motivo">
+            <option value="">-- Selecciona un motivo --</option>
+            <option value="consulta">Pregunta general</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="error">Reportar un error en la página</option>
+            <option value="contenido">Proponer nuevo contenido</option>
+            <option value="otro">Otro motivo</option>
+        </select>
+
+        <br><br>
+
+        <p>¿Con qué sección se relaciona tu mensaje?</p>
+
+        <input type="radio" id="inicio" name="seccion"
+               value="inicio">
+        <label for="inicio">Inicio</label>
+
+        <br>
+
+        <input type="radio" id="historia" name="seccion"
+               value="historia">
+        <label for="historia">Historia</label>
+
+        <br>
+
+        <input type="radio" id="idolos" name="seccion"
+               value="idolos">
+        <label for="idolos">Ídolos</label>
+
+        <br>
+
+        <input type="radio" id="multimedia" name="seccion"
+               value="multimedia">
+        <label for="multimedia">Multimedia</label>
+
+        <br>
+
+        <input type="radio" id="otra" name="seccion"
+               value="otra">
+        <label for="otra">Otra sección</label>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>3. Tu mensaje</legend>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto"
+               placeholder="Escribe el asunto">
+
+        <br><br>
+
+        <label for="mensaje">Mensaje:</label>
+
+        <br>
+
+        <textarea id="mensaje" name="mensaje"
+                  rows="6" cols="45"
+                  placeholder="Escribe tu pregunta, sugerencia o comentario..."></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="privacidad"
+               name="privacidad" value="acepto">
+
+        <label for="privacidad">
+            Acepto el tratamiento de mis datos personales
+            conforme a la política de privacidad del proyecto.
+        </label>
+
+    </fieldset>
+
+    <br>
+
+    <div class="botonesForm">
+      <input type="submit" value="Enviar mensaje">
+      <input type="reset" value="Limpiar formulario">
+    </div>
+
+</form>
+</div>
+
+
+</section>
+
+
+  <!-- ======================= PIE DE PÁGINA ======================= -->
+  <div class="card">
+    <button onclick="window.location.href='index.html'">← Volver a la página principal</button>
+  </div>
+  <hr>
+  <footer>
+    <p><small>&copy; 2026 Pasión Xeneize por Sergio Salcedo. Proyecto académico - UNIAJC.</small></p>
+  </footer>
+  <script src="./js/InicioTop.js"></script>
+  <script src="./js/validacionIngresoCampos.js"></script>
+  <script src="./js/validacionesContactanos.js"></script>
+</body>
+</html>

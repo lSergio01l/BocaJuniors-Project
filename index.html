@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+  ================================================================
+  PROYECTO : Patitas Felices - Sitio web de varias páginas
+  CURSO    : Fundamentos Web - UNIAJC
+  PÁGINA   : index.html (página principal)
+  TEMAS    : estructura HTML5 semántica, enlaces entre páginas,
+             imágenes, listas, tablas, video local y enlaces a YouTube.
+  NOTA     : solo HTML. Sin CSS ni JavaScript por ahora.
+  ================================================================
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto Boca juniors: Pasión Xeneize.">
+  <title>Inicio | Boca Jrs</title>
+  <!-- Favicon: ícono de la pestaña del navegador -->
+  <link rel="icon" href="./img/futbol-americano.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======================= ENCABEZADO ======================= -->
+    <header>
+      <div class="LogoBoca">
+        <img src="./img/boca-juniors.71c098ad.png" alt="Logo de Boca Juniors" width="125" height="125">
+      </div>
+      <div class="TextoNav">
+        <p><span>Boca Juniors</span> - Pasión Xeneize</p>
+      </div>
+
+      <!-- MENÚ: es el MISMO en todas las páginas del sitio.          -->
+      <!-- Los enlaces usan rutas RELATIVAS: los archivos están en    -->
+      <!-- la misma carpeta, así que basta con escribir su nombre.    -->
+      <nav>
+        <ul>
+          <li><a href="index.html"><u>Inicio</u></a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="idolos.html">ídolos y títulos</a></li>
+          <li><a href="multimedia.html">Galería multimedia</a></li>
+          <li><a href="trivia.html">Trivia</a></li>
+          <li><a href="Inscripcion.html">Suscríbete</a></li>
+          <li><a href="Contactanos.html">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <main>
+    <!-- Un solo h1 por página: el título principal -->
+    <div class="card">
+      <h1>Pasión Xeneize</h1>
+    </div> 
+
+    <!-- ===== Sección de bienvenida ===== -->
+    <div class="card">
+      <h2>Historia resumida de Boca Juniors</h2>
+      <div class="ResumenBoca">
+        <img src="./img/BocaEsGrande.jpg" alt="Fachada de la tienda Patitas Felices con vitrina de productos" width="500px">  
+        <div class="parrafos">
+          <p>El Club Atlético Boca Juniors fue fundado el 3 de abril de 1905 en el barrio de La Boca, en Buenos Aires, Argentina, por un grupo de jóvenes inmigrantes italianos. Desde sus comienzos, el equipo se caracterizó por su espíritu competitivo y por representar la identidad de su comunidad. Sus tradicionales colores azul y amarillo surgieron de una historia popular relacionada con un barco de bandera sueca que llegó al puerto de Buenos Aires. Con el paso del tiempo, estos colores se convirtieron en uno de los símbolos más reconocidos del fútbol mundial.</p>
+          <p>A lo largo de su historia, Boca Juniors ha construido una trayectoria llena de grandes triunfos y momentos inolvidables. Su estadio, conocido como La Bombonera, fue inaugurado el 25 de mayo de 1940 y se convirtió en el hogar de millones de aficionados. El club ha conseguido importantes títulos nacionales e internacionales, entre ellos seis Copas Libertadores y tres Copas Intercontinentales. Entre sus conquistas más recordadas se encuentran las victorias frente al Real Madrid en el año 2000 y el AC Milan en 2003, que consolidaron su reconocimiento a nivel internacional.</p>
+          <p>Además de sus títulos, Boca Juniors ha contado con grandes figuras que dejaron una huella imborrable en su historia, como Diego Maradona, Juan Román Riquelme, Martín Palermo y Carlos Tévez. Estos futbolistas contribuyeron a fortalecer la identidad del club y a escribir algunas de sus páginas más importantes. Actualmente, Boca Juniors es considerado uno de los equipos más populares y representativos de Argentina y Sudamérica, reconocido por su apasionada hinchada, su tradición futbolística y el orgullo que representa vestir los colores azul y oro.</p>
+        </div>
+        
+      </div>
+    </div>
+
+     <!--===== Video LOCAL (archivo dentro del proyecto) ===== -->
+     <div class="card">
+      <section>
+        <h2>Conócenos en video</h2>
+        <!-- controls: muestra los botones de reproducción            -->
+        <!-- poster:   imagen que se ve antes de reproducir            -->
+        <!-- muted:    inicia sin sonido                               -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GNICETsZfkQ?si=1MzIwr2DiCsPTL04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- ENLACE directo al archivo de video del proyecto -->
+        <p><a href="https://www.youtube.com/embed/GNICETsZfkQ?si=1MzIwr2DiCsPTL04" target="_blank">Abrir el video en otra pestaña</a></p>
+      </section>
+    </div>
+
+    <!-- ===== Lista ORDENADA: el orden sí importa ===== -->
+    <div class="card">
+      <section>
+        <h2>Datos interesantes</h2>
+        <ul>
+          <li>Fundación: 3 de abril de 1905.</li>
+          <li>Ciudad: Buenos Aires, Argentina.</li>
+          <li>Estadio: Alberto J. Armando, conocido como La Bombonera.</li>
+          <li>Colores tradicionales: azul y amarillo.</li>
+          <li>Apodo: Xeneize.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ===== Tabla de horario ===== -->
+    <div class="card">
+      <section>
+        <h2>Próximo partido</h2>
+        <img src="./img/Boca-y-Mineiro-previa-de-la-Sudamericana.png" alt="Imagen del próximo partido del Boca Juniors vs Atletico Mineiro" width="560" height="315">
+        <p>Para mayor información sobre este partido, ingresa <a href="https://gol.conmebol.com/sudamericana/es/fixture/view/1727" target="_blank">aquí.</a></p>
+      </section>
+    </div>
+  </main>
+  <!-- ======================= PIE DE PÁGINA ======================= -->
+  <footer>
+    <p><small>&copy; 2026 Pasión Xeneize por Sergio Salcedo. Proyecto académico - UNIAJC.</small></p>
+  </footer>
+  <script src="./js/InicioTop.js"></script>
+</body>
+</html>
