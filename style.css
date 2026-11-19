@@ -14,12 +14,6 @@ h1{
     color: #0d0050;
 }
 
-.LogoBoca{
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
 nav > ul > li > a{
     color: white;
     text-decoration: none;
@@ -61,10 +55,36 @@ header ul{
 
 nav li{
     list-style: none;
+    transition: transform 0.3s ease;
+}
+
+nav li:hover{
+    transform: scale(1.04);
 }
 
 img{
-    border-radius: 10px;
+    border: 3px solid #092C65;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: #FFCB05;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.04);
+}
+
+.LogoBoca{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.LogoBoca > img{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color:transparent;
 }
 
 .card{
@@ -96,8 +116,8 @@ button{
     width: 200px;
     height: 30px;
     border: none;
-    background-color: blue;
-    color: white;
+    background-color: #092C65;
+    color: #FFCB05;
     font-weight: bold;
     padding: 0;
     cursor: pointer;
@@ -108,8 +128,8 @@ button{
     width: 200px;
     height: 30px;
     border: none;
-    background-color: blue;
-    color: white;
+    background-color: #092C65;
+    color: #FFCB05;
     font-weight: bold;
     padding: 0;
     cursor: pointer;
@@ -121,6 +141,340 @@ footer{
     color: white;
     background: linear-gradient(yellow, #0d0050);
     border-radius: 0px 0px 10px 10px;
+}
+
+/*ESTILO FORMULARIO CONTACTANOS*/
+
+#formContactanos {
+    width: 85%;
+    max-width: 750px;
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 2px solid #092C65;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.20);
+    font-family: 'Roboto', sans-serif;
+}
+
+#formContactanos fieldset {
+    border: 2px solid #092C65;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#formContactanos legend {
+    color: #092C65;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#formContactanos label {
+    color: #092C65;
+    font-weight: bold;
+}
+
+#formContactanos input[type="text"],
+#formContactanos input[type="email"],
+#formContactanos input[type="tel"],
+#formContactanos select,
+#formContactanos textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #AAB5C5;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#formContactanos input:focus,
+#formContactanos select:focus,
+#formContactanos textarea:focus {
+    border-color: #092C65;
+    box-shadow: 0px 0px 6px rgba(9, 44, 101, 0.35);
+}
+
+#formContactanos input[type="radio"],
+#formContactanos input[type="checkbox"] {
+    accent-color: #092C65;
+    cursor: pointer;
+}
+
+#formContactanos input[type="radio"] + label,
+#formContactanos input[type="checkbox"] + label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/*ESTILO FORMULARIO TRIVIA*/
+
+#formTrivia {
+    width: 85%;
+    max-width: 750px;
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 2px solid #092C65;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.20);
+    font-family: 'Roboto', sans-serif;
+}
+
+#formTrivia fieldset {
+    border: 2px solid #092C65;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#formTrivia legend {
+    color: #092C65;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#formTrivia p {
+    color: #092C65;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+#formTrivia label {
+    color: #333333;
+    font-size: 14px;
+}
+
+#formTrivia input[type="text"],
+#formTrivia input[type="email"],
+#formTrivia input[type="date"],
+#formTrivia select,
+#formTrivia textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #AAB5C5;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#formTrivia input:focus,
+#formTrivia select:focus,
+#formTrivia textarea:focus {
+    border-color: #092C65;
+    box-shadow: 0px 0px 6px rgba(9, 44, 101, 0.35);
+}
+
+#formTrivia input[type="radio"],
+#formTrivia input[type="checkbox"],
+#formTrivia input[type="range"] {
+    accent-color: #092C65;
+    cursor: pointer;
+}
+
+#formTrivia input[type="radio"] + label,
+#formTrivia input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+/*ESTILO FORMULARIO DE SUSCRIPCIÓN*/
+
+#formSuscripcion {
+    width: 85%;
+    max-width: 750px;
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 2px solid #092C65;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.20);
+    font-family: 'Roboto', sans-serif;
+}
+
+#formSuscripcion h2 {
+    color: #092C65;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#formSuscripcion fieldset {
+    border: 2px solid #092C65;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#formSuscripcion legend {
+    color: #092C65;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#formSuscripcion label {
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#formSuscripcion input[type="text"],
+#formSuscripcion input[type="email"],
+#formSuscripcion input[type="tel"],
+#formSuscripcion select,
+#formSuscripcion textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #AAB5C5;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#formSuscripcion fieldset p {
+    margin-bottom: 20px;
+}
+
+#formSuscripcion fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#formSuscripcion input:focus,
+#formSuscripcion select:focus,
+#formSuscripcion textarea:focus {
+    border-color: #092C65;
+    box-shadow: 0px 0px 6px rgba(9, 44, 101, 0.35);
+}
+
+#formSuscripcion input[type="radio"],
+#formSuscripcion input[type="checkbox"] {
+    accent-color: #092C65;
+    cursor: pointer;
+}
+
+#formSuscripcion input[type="radio"] + label,
+#formSuscripcion input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+#formSuscripcion input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px dashed #092C65;
+    border-radius: 8px;
+    background-color: #F2F4FF;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/*AQUÍ SE AGREGA EL ESTILO A LA TABLA DE TÍTULOS*/
+
+.tabla-titulos {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border: 2px solid #092C65;
+}
+
+/* Título de la tabla */
+.tabla-titulos caption {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: #092C65;
+    margin-bottom: 15px;
+}
+
+/* Encabezados */
+.tabla-titulos thead {
+    background-color: #092C65;
+    color: #FFCB05;
+}
+
+.tabla-titulos th {
+    padding: 15px;
+    border: 1px solid #FFFFFF;
+}
+
+/* Celdas */
+.tabla-titulos td {
+    padding: 15px;
+    border: 1px solid #092C65;
+}
+
+/* Primera columna */
+.tabla-titulos tbody th {
+    background-color: #FFCB05;
+    color: #092C65;
+}
+
+/* Filas */
+.tabla-titulos tbody tr {
+    background-color: #FFFFFF;
+}
+
+/* Efecto al pasar el cursor */
+.tabla-titulos tbody tr:hover {
+    background-color: #E8EEF7;
+}
+
+/* Efecto para las celdas */
+.tabla-titulos tbody tr:hover th {
+    background-color: #F2B900;
+}
+
+/*ESTILO PARA LA TABLA DE IDOLOS*/
+
+.tabla-idolos {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border: 2px solid #092C65;
+}
+
+.tabla-idolos th {
+    background-color: #092C65;
+    color: #FFCB05;
+    padding: 15px;
+    border: 1px solid #FFFFFF;
+}
+
+.tabla-idolos td {
+    padding: 15px;
+    border: 1px solid #092C65;
+}
+
+.tabla-idolos tbody tr {
+    background-color: #FFFFFF;
+}
+
+.tabla-idolos tbody tr:hover {
+    background-color: #E8EEF7;
 }
 
 /*AQUÍ SE AGREGA LA LÓGICA DEL CARRUSEL DE FOTOS*/
